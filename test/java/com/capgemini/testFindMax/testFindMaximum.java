@@ -1,7 +1,7 @@
 package com.capgemini.testFindMax;
 
-import static org.junit.Assert.assertTrue;
 import org.junit.Test;
+import static org.junit.Assert.assertTrue;
 import com.capgemini.findMax.FindMaximum;
 
 public class testFindMaximum {

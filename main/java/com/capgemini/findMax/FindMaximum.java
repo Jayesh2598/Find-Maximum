@@ -9,8 +9,8 @@ public class FindMaximum<E extends Comparable<E>> {
 
 	E maximum;
 
-	public E getMaximum() {
-		return maximum;
+	public void printMax() {
+		System.out.println(maximum);
 	}
 
 	public static void main(String[] args) {
@@ -21,6 +21,7 @@ public class FindMaximum<E extends Comparable<E>> {
 	public E findMaximum(E... values) {
 		Arrays.sort(values);
 		this.maximum = values[values.length - 1];
+		printMax();
 		return maximum;
 	}
 }
