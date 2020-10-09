@@ -8,19 +8,31 @@ public class testFindMaximum {
 	
 	@Test
 	public void maximumAtFirstPosition() {
-		String maximum = FindMaximum.findMax("Peach", "Apple", "Banana");
-		assertTrue("Peach".equals(maximum));
+		Integer maxInteger = FindMaximum.findMaximum(50,30,-10);
+		assertTrue(50==maxInteger);
+		Float maxFloat = FindMaximum.findMaximum(50.0f,30.0f,-10.0f);
+		assertTrue(50.0f==maxFloat);
+		String maxString = FindMaximum.findMaximum("Peach", "Apple", "Banana");
+		assertTrue("Peach".equals(maxString));
 	}
 	
 	@Test
 	public void maximumAtSecondPosition() {
-		String maximum = FindMaximum.findMax("Apple", "Peach", "Banana");
+		Integer maxInteger = FindMaximum.findMaximum(30,50,-10);
+		assertTrue(50==maxInteger);
+		Float maxFloat = FindMaximum.findMaximum(30.0f,50.0f,-10.0f);
+		assertTrue(50.0f==maxFloat);
+		String maximum = FindMaximum.findMaximum("Apple", "Peach", "Banana");
 		assertTrue("Peach".equals(maximum));
 	}
 	
 	@Test
 	public void maxAtFirstPosition() {
-		String maximum = FindMaximum.findMax("Apple", "Banana", "Peach");
+		Integer maxInteger = FindMaximum.findMaximum(30,-10,50);
+		assertTrue(50==maxInteger);
+		Float maxFloat = FindMaximum.findMaximum(30.0f,-10.0f,50.0f);
+		assertTrue(50.0f==maxFloat);
+		String maximum = FindMaximum.findMaximum("Apple", "Banana", "Peach");
 		assertTrue("Peach".equals(maximum));
 	}
 }
