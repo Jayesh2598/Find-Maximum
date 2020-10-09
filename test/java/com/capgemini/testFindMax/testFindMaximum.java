@@ -8,19 +8,19 @@ public class testFindMaximum {
 	
 	@Test
 	public void maximumAtFirstPosition() {
-		Integer maximum = FindMaximum.findMax(50,30,-10);
-		assertTrue(50==maximum);
+		Float maximum = FindMaximum.findMax(50.0f,30.0f,-10.0f);
+		assertTrue(50.0f==maximum);
 	}
 	
 	@Test
 	public void maximumAtSecondPosition() {
-		Integer maximum = FindMaximum.findMax(30,50,-10);
-		assertTrue(50==maximum);
+		Float maximum = FindMaximum.findMax(30.0f,50.0f,-10.0f);
+		assertTrue(50.0f==maximum);
 	}
 	
 	@Test
 	public void maxAtFirstPosition() {
-		Integer maximum = FindMaximum.findMax(30,-10,50);
-		assertTrue(50==maximum);
+		Float maximum = FindMaximum.findMax(30.0f,-10.0f,50.0f);
+		assertTrue(50.0f==maximum);
 	}
 }
